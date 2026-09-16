@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todd Bennison · Web Designer</title>
+    <meta
+      name="description"
+      content="Web designer for builders and trades in Sydney. Runs Synora Designs, a founder-led design studio for websites, capability statements and media."
+    />
+    <meta
+      name="theme-color"
+      content="#FAFAF8"
+      media="(prefers-color-scheme: light)"
+      data-theme-color="light"
+    />
+    <meta
+      name="theme-color"
+      content="#161615"
+      media="(prefers-color-scheme: dark)"
+      data-theme-color="dark"
+    />
+    <link rel="canonical" href="https://toddbennison.com/" />
+
+    <meta property="og:title" content="Todd Bennison · Web Designer" />
+    <meta
+      property="og:description"
+      content="Web designer for builders and trades in Sydney. Runs Synora Designs, a one-person studio for websites, capability statements and media."
+    />
+    <meta property="og:url" content="https://toddbennison.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://toddbennison.com/images/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script src="/js/theme-init.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script type="module" src="/js/main.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Todd Bennison",
+        "url": "https://toddbennison.com/",
+        "jobTitle": "Web Designer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Synora Designs",
+          "url": "https://www.synora.com.au"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <div>
+        <header class="header">
+          <img class="avatar" src="/images/ToddB.jpg" alt="" width="64" height="64" />
+          <div>
+            <h1 class="name">Todd Bennison</h1>
+            <p class="title">Web Designer</p>
+          </div>
+        </header>
+
+        <section class="bio">
+          <p>
+            I design websites for builders and trades. I'm based in the Sutherland Shire, Sydney.
+          </p>
+          <p>
+            Before that, I played football for Sydney United and spent two years overseas trying to
+            make it.
+          </p>
+          <p>
+            I run <a href="https://www.synora.com.au">Synora Designs</a>, a founder-led design studio for
+            builders and trades. I also do capability statements, and photo, video and drone work
+            under Synora Media.
+          </p>
+          <p>
+            Find me on <a href="https://www.instagram.com/synoradesigns/">Instagram</a> or
+            <a href="https://www.linkedin.com/in/toddbennison">LinkedIn</a>, or just
+            <a href="mailto:todd@synora.com.au">email me</a>.
+          </p>
+          <p class="cta-row">
+            <a class="cta" href="https://cal.com/synora/15min">Book a call</a>
+          </p>
+        </section>
+
+        <section class="work" aria-label="Work history">
+          <h2 class="section-heading">Work</h2>
+          <ul class="work-list">
+            <li>
+              <a class="work-row" href="https://www.synora.com.au">
+                <span class="work-main">
+                  <span class="work-company">Synora Designs</span>
+                  <span class="work-role">Founder &amp; Web Designer</span>
+                </span>
+                <span class="work-years">2022 to now</span>
+              </a>
+            </li>
+            <li>
+              <span class="work-row">
+                <span class="work-main">
+                  <span class="work-company">Synora Media</span>
+                  <span class="work-role">Photo, Video &amp; Drone</span>
+                </span>
+                <span class="work-years">2025 to now</span>
+              </span>
+            </li>
+            <li>
+              <span class="work-row">
+                <span class="work-main">
+                  <span class="work-company">Sydney United</span>
+                  <span class="work-role">My football era</span>
+                </span>
+                <button
+                  class="ball-btn"
+                  id="ball-btn"
+                  type="button"
+                  aria-label="Play keepy-uppy"
+                  aria-haspopup="dialog"
+                  aria-controls="keepy"
+                  title="Keepy-uppy"
+                >
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <path d="M12 7.2l4.2 3-1.6 4.9H9.4L7.8 10.2z" fill="currentColor" />
+                    <path
+                      d="M12 7.2V2.2M16.2 10.2l4.6-1.6M14.6 15.1l2.9 4.1M9.4 15.1l-2.9 4.1M7.8 10.2L3.2 8.6"
+                      stroke="currentColor"
+                      stroke-width="1.3"
+                    />
+                  </svg>
+                </button>
+              </span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <p>Currently working from: Sydney, Australia</p>
+        <div class="footer-end">
+          <time id="clock" aria-label="Local time in Sydney"></time>
+          <button
+            class="theme-switch"
+            id="theme-switch"
+            type="button"
+            role="switch"
+            aria-checked="false"
+            aria-label="Dark mode"
+            title="Dark mode"
+          ></button>
+        </div>
+      </footer>
+    </main>
+
+    <div class="keepy" id="keepy" role="dialog" aria-modal="true" aria-label="Keepy-uppy" hidden>
+      <canvas class="keepy-pitch"></canvas>
+      <div class="keepy-top">
+        <div>
+          <div class="keepy-score" aria-live="polite">0</div>
+          <div class="keepy-best"></div>
+        </div>
+        <button class="keepy-close" type="button">Close</button>
+      </div>
+      <p class="keepy-msg">Tap the ball to keep it up</p>
+    </div>
+  </body>
+</html>
