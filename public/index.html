@@ -6,173 +6,122 @@
     <title>Todd Bennison</title>
     <meta
       name="description"
-      content="Web designer for builders and trades in Sydney. Runs Synora Designs, a founder-led design studio for websites, capability statements and media."
+      content="Founder and collector. Founder of Synora Designs. Collecting stone, maps, watches and cars."
     />
-    <meta
-      name="theme-color"
-      content="#FAFAF8"
-      media="(prefers-color-scheme: light)"
-      data-theme-color="light"
-    />
-    <meta
-      name="theme-color"
-      content="#161615"
-      media="(prefers-color-scheme: dark)"
-      data-theme-color="dark"
-    />
+    <meta name="theme-color" content="#FFFFFF" />
     <link rel="canonical" href="https://toddbennison.com/" />
-
-    <meta property="og:title" content="Todd Bennison · Web Designer" />
+    <meta property="og:site_name" content="Todd Bennison" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Todd Bennison" />
     <meta
       property="og:description"
-      content="Web designer for builders and trades in Sydney. Runs Synora Designs, a one-person studio for websites, capability statements and media."
+      content="Founder and collector. Founder of Synora Designs. Collecting stone, maps, watches and cars."
     />
     <meta property="og:url" content="https://toddbennison.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://toddbennison.com/images/og.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <script src="/js/theme-init.js"></script>
+    <meta property="og:image" content="https://toddbennison.com/images/ToddB.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/images/ToddB.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="/images/ToddB.jpg" />
+    <link
+      rel="preload"
+      href="/fonts/inter-v12-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/inter-v12-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="/styles.css" />
-
     <script type="module" src="/js/main.js"></script>
-
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Todd Bennison",
         "url": "https://toddbennison.com/",
-        "jobTitle": "Web Designer",
+        "image": "https://toddbennison.com/images/ToddB.jpg",
+        "description": "Founder and collector. Founder of Synora Designs. Collecting stone, maps, watches and cars.",
+        "jobTitle": "Founder",
         "worksFor": {
           "@type": "Organization",
           "name": "Synora Designs",
           "url": "https://www.synora.com.au"
-        }
+        },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Western Sydney University" },
+        "homeLocation": { "@type": "Place", "name": "Sydney, Australia" },
+        "sameAs": [
+          "https://www.instagram.com/synoradesigns/",
+          "https://www.linkedin.com/in/toddbennison"
+        ]
       }
     </script>
   </head>
   <body>
-    <main class="container">
-      <div>
-        <header class="header">
-          <img class="avatar" src="/images/ToddB.jpg" alt="" width="64" height="64" />
-          <div>
-            <h1 class="name">Todd Bennison</h1>
-            <p class="title">Web Designer</p>
-          </div>
-        </header>
-
-        <section class="bio">
-          <p>
-            I design websites for builders and trades. I'm based in the Sutherland Shire, Sydney.
-          </p>
-          <p>
-            Before that, I played football for Sydney United and spent two years overseas trying to
-            make it.
-          </p>
-          <p>
-            I run <a href="https://www.synora.com.au">Synora Designs</a>, a founder-led design
-            studio for builders and trades. I also do capability statements, and photo, video and
-            drone work under Synora Media.
-          </p>
-          <p>
-            Find me on <a href="https://www.instagram.com/synoradesigns/">Instagram</a> or
-            <a href="https://www.linkedin.com/in/toddbennison">LinkedIn</a>, or just
-            <a href="mailto:todd@synora.com.au">email me</a>.
-          </p>
-          <p class="cta-row">
-            <a class="cta" href="https://cal.com/synora/15min">Book a call</a>
-          </p>
-        </section>
-
-        <section class="work" aria-label="Work history">
-          <h2 class="section-heading">Work</h2>
-          <ul class="work-list">
-            <li>
-              <a class="work-row" href="https://www.synora.com.au">
-                <span class="work-main">
-                  <span class="work-company">Synora Designs</span>
-                  <span class="work-role">Founder &amp; Web Designer</span>
-                </span>
-                <span class="work-years">2022 to now</span>
-              </a>
-            </li>
-            <li>
-              <span class="work-row">
-                <span class="work-main">
-                  <span class="work-company">Synora Media</span>
-                  <span class="work-role">Photo, Video &amp; Drone</span>
-                </span>
-                <span class="work-years">2025 to now</span>
-              </span>
-            </li>
-            <li>
-              <span class="work-row">
-                <span class="work-main">
-                  <span class="work-company">Sydney United</span>
-                  <span class="work-role">My football era</span>
-                </span>
-                <button
-                  class="ball-btn"
-                  id="ball-btn"
-                  type="button"
-                  aria-label="Play keepy-uppy"
-                  aria-haspopup="dialog"
-                  aria-controls="keepy"
-                  title="Keepy-uppy"
-                >
-                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path d="M12 7.2l4.2 3-1.6 4.9H9.4L7.8 10.2z" fill="currentColor" />
-                    <path
-                      d="M12 7.2V2.2M16.2 10.2l4.6-1.6M14.6 15.1l2.9 4.1M9.4 15.1l-2.9 4.1M7.8 10.2L3.2 8.6"
-                      stroke="currentColor"
-                      stroke-width="1.3"
-                    />
-                  </svg>
-                </button>
-              </span>
-            </li>
+    <header class="head">
+      <div class="head-inner">
+        <a class="logo" href="/">Todd Bennison</a>
+        <nav class="head-menu" aria-label="Primary">
+          <ul class="nav">
+            <li><a href="/essays/">Essays</a></li>
+            <li><a href="/collection/">Collection</a></li>
           </ul>
-        </section>
+        </nav>
       </div>
+    </header>
 
-      <footer class="footer">
-        <p>Currently working from: Sydney, Australia</p>
-        <div class="footer-end">
-          <time id="clock" aria-label="Local time in Sydney"></time>
-          <button
-            class="theme-switch"
-            id="theme-switch"
-            type="button"
-            role="switch"
-            aria-checked="false"
-            aria-label="Dark mode"
-            title="Dark mode"
-          ></button>
+    <main class="main">
+      <article class="article">
+        <h1 class="title">Todd Bennison</h1>
+
+        <div class="content">
+          <p>
+            I'm a founder and a collector. I build websites and keep old things that were made
+            properly.
+          </p>
+          <p>
+            I founded <a href="https://www.synora.com.au">Synora Designs</a>, where I'm Director. We
+            work with builders, construction companies and trades across NSW, on websites and the
+            capability statements they take into tenders.
+          </p>
+          <p>
+            <a href="https://www.synora.com.au">Synora Media</a> is the newest part of the studio,
+            drone and site footage for builders whose best projects are sitting in their camera
+            roll.
+          </p>
+          <p>
+            I'm interested in presentation at the scale of a photograph, a page, a document and an
+            object. My collecting spans stone, maps, watches and cars. I'm a maker first.
+          </p>
+          <p>
+            Before Synora the plan was football. It took me through Sydney, Singapore and Serbia.
+          </p>
+          <p>I studied cyber security at Western Sydney University.</p>
+          <p>
+            <a href="/essays/">Essays</a> · <a href="/collection/">Collection</a> ·
+            <a href="https://www.instagram.com/synoradesigns/">Instagram</a> ·
+            <a href="https://www.linkedin.com/in/toddbennison">LinkedIn</a>
+          </p>
+          <p class="sub">
+            <a href="mailto:todd@synora.com.au">Email</a> ·
+            <a href="https://www.synora.com.au">Synora</a>
+          </p>
         </div>
-      </footer>
+      </article>
     </main>
 
-    <div class="keepy" id="keepy" role="dialog" aria-modal="true" aria-label="Keepy-uppy" hidden>
-      <canvas class="keepy-pitch"></canvas>
-      <div class="keepy-top">
-        <div>
-          <div class="keepy-score" aria-live="polite">0</div>
-          <div class="keepy-best"></div>
+    <footer class="foot">
+      <div class="foot-inner">
+        <p>Todd Bennison © 2026</p>
+        <div class="foot-end">
+          <span>Sydney</span>
+          <time id="clock" aria-label="Local time in Sydney"></time>
         </div>
-        <button class="keepy-close" type="button">Close</button>
       </div>
-      <p class="keepy-msg">Tap the ball to keep it up</p>
-    </div>
+    </footer>
   </body>
 </html>

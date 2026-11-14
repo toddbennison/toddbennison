@@ -4,20 +4,66 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page not found · Todd Bennison</title>
+    <meta name="description" content="Page not found." />
     <meta name="robots" content="noindex" />
-    <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#161615" media="(prefers-color-scheme: dark)" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <script src="/js/theme-init.js"></script>
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="canonical" href="https://toddbennison.com/404" />
+    <meta property="og:site_name" content="Todd Bennison" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Page not found · Todd Bennison" />
+    <meta property="og:description" content="Page not found." />
+    <meta property="og:url" content="https://toddbennison.com/404" />
+    <meta property="og:image" content="https://toddbennison.com/images/ToddB.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/images/ToddB.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="/images/ToddB.jpg" />
+    <link
+      rel="preload"
+      href="/fonts/inter-v12-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/inter-v12-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/js/main.js"></script>
   </head>
   <body>
-    <main class="container">
-      <div class="bio">
-        <h1 class="name">Page not found</h1>
-        <p class="title">That link doesn't go anywhere.</p>
-        <p class="cta-row"><a class="cta" href="/">Back to the homepage</a></p>
+    <header class="head">
+      <div class="head-inner">
+        <a class="logo" href="/">Todd Bennison</a>
+        <nav class="head-menu" aria-label="Primary">
+          <ul class="nav">
+            <li><a href="/essays/">Essays</a></li>
+            <li><a href="/collection/">Collection</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
+
+    <main class="main">
+      <article class="article">
+        <h1 class="title">Page not found</h1>
+        <div class="content">
+          <p>That link doesn't go anywhere. <a href="/">Back to the homepage</a>.</p>
+        </div>
+      </article>
     </main>
+
+    <footer class="foot">
+      <div class="foot-inner">
+        <p>Todd Bennison © 2026</p>
+        <div class="foot-end">
+          <span>Sydney</span>
+          <time id="clock" aria-label="Local time in Sydney"></time>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
