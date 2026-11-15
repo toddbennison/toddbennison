@@ -417,6 +417,103 @@ a.row:hover .row-title {
   line-height: 1.5;
 }
 
+/* Collection */
+.pieces {
+  display: grid;
+  gap: 56px;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.piece {
+  display: block;
+  color: var(--ink);
+}
+
+.piece:hover {
+  opacity: 1;
+}
+
+.piece img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #f4f4f2;
+  transition: opacity 0.3s ease;
+}
+
+.piece:hover img {
+  opacity: 0.92;
+}
+
+.piece-caption {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 24px;
+  padding-top: 16px;
+}
+
+.piece-title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.2px;
+}
+
+.piece:hover .piece-title {
+  text-decoration: underline;
+  text-decoration-color: var(--link-line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a.post-meta:hover {
+  color: var(--ink);
+  opacity: 1;
+}
+
+.piece-image {
+  margin: 32px 0 0;
+}
+
+.piece-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.piece-body {
+  margin-top: 32px;
+}
+
+.details {
+  margin-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.details > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.details dt {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.details dd {
+  margin: 0;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+
 @media (max-width: 767px) {
   .head {
     height: auto;
