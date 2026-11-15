@@ -420,7 +420,8 @@ a.row:hover .row-title {
 /* Collection */
 .pieces {
   display: grid;
-  gap: 56px;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 24px;
   margin-top: 40px;
   padding: 0;
   list-style: none;
@@ -450,11 +451,13 @@ a.row:hover .row-title {
 }
 
 .piece-caption {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: baseline;
-  gap: 24px;
-  padding-top: 16px;
+  display: block;
+  padding-top: 14px;
+}
+
+.piece-caption .row-meta {
+  display: block;
+  margin-top: 2px;
 }
 
 .piece-title {
@@ -515,6 +518,11 @@ a.post-meta:hover {
 }
 
 @media (max-width: 767px) {
+  .pieces {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
   .head {
     height: auto;
   }
