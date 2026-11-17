@@ -57,12 +57,42 @@
         <a class="post-meta" href="/collection/">Collection</a>
         <h1 class="post-title">Guan Yu Figure</h1>
         <figure class="piece-image">
-          <img
-            src="/images/collection/guan-yu.jpg"
-            width="1600"
-            height="1600"
-            alt="Glazed ceramic figure of Guan Yu in green robes, holding his guandao, between two painted vases"
-          />
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                /media/guan-yu-de117a1f-400.avif   400w,
+                /media/guan-yu-de117a1f-700.avif   700w,
+                /media/guan-yu-de117a1f-1000.avif 1000w,
+                /media/guan-yu-de117a1f-1440.avif 1440w
+              "
+              sizes="(max-width: 767px) calc(100vw - 48px), 720px"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                /media/guan-yu-de117a1f-400.webp   400w,
+                /media/guan-yu-de117a1f-700.webp   700w,
+                /media/guan-yu-de117a1f-1000.webp 1000w,
+                /media/guan-yu-de117a1f-1440.webp 1440w
+              "
+              sizes="(max-width: 767px) calc(100vw - 48px), 720px"
+            />
+            <img
+              src="/media/guan-yu-de117a1f-1000.jpg"
+              srcset="
+                /media/guan-yu-de117a1f-400.jpg   400w,
+                /media/guan-yu-de117a1f-700.jpg   700w,
+                /media/guan-yu-de117a1f-1000.jpg 1000w,
+                /media/guan-yu-de117a1f-1440.jpg 1440w
+              "
+              sizes="(max-width: 767px) calc(100vw - 48px), 720px"
+              width="1600"
+              height="1600"
+              alt="Glazed ceramic figure of Guan Yu in green robes, holding his guandao, between two painted vases"
+              fetchpriority="high"
+            />
+          </picture>
         </figure>
         <div class="post-body piece-body">
           <p>

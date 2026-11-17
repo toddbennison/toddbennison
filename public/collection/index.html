@@ -30,6 +30,13 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="/fonts/inter-v12-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="/styles.css" />
     <script type="module" src="/js/main.js"></script>
   </head>
@@ -52,12 +59,42 @@
         <ul class="pieces">
           <li>
             <a class="piece" href="/collection/stone-warriors/">
-              <img
-                src="/images/collection/stone-warriors.jpg"
-                width="1600"
-                height="1600"
-                alt="Two carved stone warrior figures standing on stone plinths"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /media/stone-warriors-02d83a2e-400.avif   400w,
+                    /media/stone-warriors-02d83a2e-700.avif   700w,
+                    /media/stone-warriors-02d83a2e-1000.avif 1000w,
+                    /media/stone-warriors-02d83a2e-1440.avif 1440w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /media/stone-warriors-02d83a2e-400.webp   400w,
+                    /media/stone-warriors-02d83a2e-700.webp   700w,
+                    /media/stone-warriors-02d83a2e-1000.webp 1000w,
+                    /media/stone-warriors-02d83a2e-1440.webp 1440w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <img
+                  src="/media/stone-warriors-02d83a2e-1000.jpg"
+                  srcset="
+                    /media/stone-warriors-02d83a2e-400.jpg   400w,
+                    /media/stone-warriors-02d83a2e-700.jpg   700w,
+                    /media/stone-warriors-02d83a2e-1000.jpg 1000w,
+                    /media/stone-warriors-02d83a2e-1440.jpg 1440w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                  width="1600"
+                  height="1600"
+                  alt="Two carved stone warrior figures standing on stone plinths"
+                  fetchpriority="high"
+                />
+              </picture>
               <span class="piece-caption">
                 <span class="piece-title">Pair of stone warriors</span>
                 <span class="row-meta">Stone</span>
@@ -66,13 +103,39 @@
           </li>
           <li>
             <a class="piece" href="/collection/marble-lamps/">
-              <img
-                src="/images/collection/marble-lamps.jpg"
-                width="1320"
-                height="1189"
-                alt="Two carved marble column table lamps with cream shades on a timber table"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /media/marble-lamps-3a82fbd3-400.avif   400w,
+                    /media/marble-lamps-3a82fbd3-700.avif   700w,
+                    /media/marble-lamps-3a82fbd3-1000.avif 1000w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /media/marble-lamps-3a82fbd3-400.webp   400w,
+                    /media/marble-lamps-3a82fbd3-700.webp   700w,
+                    /media/marble-lamps-3a82fbd3-1000.webp 1000w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <img
+                  src="/media/marble-lamps-3a82fbd3-1000.jpg"
+                  srcset="
+                    /media/marble-lamps-3a82fbd3-400.jpg   400w,
+                    /media/marble-lamps-3a82fbd3-700.jpg   700w,
+                    /media/marble-lamps-3a82fbd3-1000.jpg 1000w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                  width="1320"
+                  height="1189"
+                  alt="Two carved marble column table lamps with cream shades on a timber table"
+                  fetchpriority="high"
+                />
+              </picture>
               <span class="piece-caption">
                 <span class="piece-title">Pair of marble column lamps</span>
                 <span class="row-meta">Marble</span>
@@ -81,13 +144,40 @@
           </li>
           <li>
             <a class="piece" href="/collection/aces-and-eights/">
-              <img
-                src="/images/collection/aces-and-eights.jpg"
-                width="1052"
-                height="1052"
-                alt="Aces &amp; Eights poker set in its hardwood and brass cabinet, doors open, chips racked and the card drawer pulled out"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /media/aces-and-eights-c6608edc-400.avif   400w,
+                    /media/aces-and-eights-c6608edc-700.avif   700w,
+                    /media/aces-and-eights-c6608edc-1000.avif 1000w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /media/aces-and-eights-c6608edc-400.webp   400w,
+                    /media/aces-and-eights-c6608edc-700.webp   700w,
+                    /media/aces-and-eights-c6608edc-1000.webp 1000w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <img
+                  src="/media/aces-and-eights-c6608edc-1000.jpg"
+                  srcset="
+                    /media/aces-and-eights-c6608edc-400.jpg   400w,
+                    /media/aces-and-eights-c6608edc-700.jpg   700w,
+                    /media/aces-and-eights-c6608edc-1000.jpg 1000w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                  width="1052"
+                  height="1052"
+                  alt="Aces &amp; Eights poker set in its hardwood and brass cabinet, doors open, chips racked and the card drawer pulled out"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <span class="piece-caption">
                 <span class="piece-title">Aces &amp; Eights poker set</span>
                 <span class="row-meta">Hardwood and brass</span>
@@ -96,13 +186,43 @@
           </li>
           <li>
             <a class="piece" href="/collection/guan-yu/">
-              <img
-                src="/images/collection/guan-yu.jpg"
-                width="1600"
-                height="1600"
-                alt="Glazed ceramic figure of Guan Yu in green robes, holding his guandao, between two painted vases"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /media/guan-yu-de117a1f-400.avif   400w,
+                    /media/guan-yu-de117a1f-700.avif   700w,
+                    /media/guan-yu-de117a1f-1000.avif 1000w,
+                    /media/guan-yu-de117a1f-1440.avif 1440w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /media/guan-yu-de117a1f-400.webp   400w,
+                    /media/guan-yu-de117a1f-700.webp   700w,
+                    /media/guan-yu-de117a1f-1000.webp 1000w,
+                    /media/guan-yu-de117a1f-1440.webp 1440w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                />
+                <img
+                  src="/media/guan-yu-de117a1f-1000.jpg"
+                  srcset="
+                    /media/guan-yu-de117a1f-400.jpg   400w,
+                    /media/guan-yu-de117a1f-700.jpg   700w,
+                    /media/guan-yu-de117a1f-1000.jpg 1000w,
+                    /media/guan-yu-de117a1f-1440.jpg 1440w
+                  "
+                  sizes="(max-width: 767px) calc(100vw - 48px), 348px"
+                  width="1600"
+                  height="1600"
+                  alt="Glazed ceramic figure of Guan Yu in green robes, holding his guandao, between two painted vases"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <span class="piece-caption">
                 <span class="piece-title">Guan Yu figure</span>
                 <span class="row-meta">Glazed ceramic</span>

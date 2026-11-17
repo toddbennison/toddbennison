@@ -60,12 +60,39 @@
         <a class="post-meta" href="/collection/">Collection</a>
         <h1 class="post-title">Pair of Marble Column Lamps</h1>
         <figure class="piece-image">
-          <img
-            src="/images/collection/marble-lamps.jpg"
-            width="1320"
-            height="1189"
-            alt="Two carved marble column table lamps with cream shades on a timber table"
-          />
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                /media/marble-lamps-3a82fbd3-400.avif   400w,
+                /media/marble-lamps-3a82fbd3-700.avif   700w,
+                /media/marble-lamps-3a82fbd3-1000.avif 1000w
+              "
+              sizes="(max-width: 767px) calc(100vw - 48px), 720px"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                /media/marble-lamps-3a82fbd3-400.webp   400w,
+                /media/marble-lamps-3a82fbd3-700.webp   700w,
+                /media/marble-lamps-3a82fbd3-1000.webp 1000w
+              "
+              sizes="(max-width: 767px) calc(100vw - 48px), 720px"
+            />
+            <img
+              src="/media/marble-lamps-3a82fbd3-1000.jpg"
+              srcset="
+                /media/marble-lamps-3a82fbd3-400.jpg   400w,
+                /media/marble-lamps-3a82fbd3-700.jpg   700w,
+                /media/marble-lamps-3a82fbd3-1000.jpg 1000w
+              "
+              sizes="(max-width: 767px) calc(100vw - 48px), 720px"
+              width="1320"
+              height="1189"
+              alt="Two carved marble column table lamps with cream shades on a timber table"
+              fetchpriority="high"
+            />
+          </picture>
         </figure>
         <div class="post-body piece-body">
           <p>

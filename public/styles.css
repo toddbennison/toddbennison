@@ -436,6 +436,11 @@ a.row:hover .row-title {
   opacity: 1;
 }
 
+.piece picture,
+.piece-image picture {
+  display: block;
+}
+
 .piece img {
   display: block;
   width: 100%;
